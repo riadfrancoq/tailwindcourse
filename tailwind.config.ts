@@ -7,7 +7,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-
+    container: {
+        center: true
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -15,6 +17,7 @@ const config: Config = {
       xl: '1440px',
     },
     extend: {
+      
       margin: {
         1: '14px',
         2: '16px',
