@@ -30,9 +30,7 @@ const config: Config = {
           932: "#434252"
         } 
       },
-      fontSize: {
-        base: '18px',
-      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

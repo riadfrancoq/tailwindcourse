@@ -4,8 +4,65 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    @apply text-vuejs-932;
-    font-family:  "Yarndins 12", system-ui;
-  };
+
+  h1 {
+    @apply text-3xl font-bold mb-2;
+  }
+  h2 {
+    @apply text-xl font-semibold mb-1;
+  }
+  p { 
+    @apply text-base;
+  }
+  a {
+    @apply underline text-blue-600 hover:text-purple-700 transition duration-500 decoration-wavy underline-offset-4;
+  }
+
+  input, select {
+    @apply text-slate-500 p-1 mb-1 border border-slate-300 rounded outline-none;
+    
+  }
+  select {
+    @apply pr-8;
+  }
+
+  label {
+    @apply text-sm text-slate-700 mr-1 font-medium leading-4;
+  }
+
+
+
+  input[type="text"] {
+      @apply  placeholder:italic disabled:bg-slate-100;
+  }
+
+  input[type="checkbox"] {
+    @apply accent-purple-500 checked:bg-red-500 mr-1 mb-0 mt-0.5;
+
+  }
+  .btn {
+    @apply px-4 py-2 rounded-lg hover:transition hover:duration-300 hover:opacity-80 disabled:bg-slate-400/30 hover:disabled:opacity-100;
+  }
+
+
+  .btn-primary {
+    @apply p-1 mb-1 border border-slate-300 rounded outline-none bg-blue-600 text-white 
+  }
+  
+
+
+  .btn-secondary {
+    @apply bg-slate-800 text-white;
+  }
+
+  .Select { 
+    @apply w-32 border border-slate-300 rounded inline-block cursor-pointer transition;
+  }
+  .Select .child {
+    @apply px-2 py-1;
+  }
+
+  .Select ul li {
+    @apply hover:bg-slate-100;
+  }
 };
